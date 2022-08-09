@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <script src="js/myscript.js"></script>
+    <!-- header -->
+    <header class="container-fluid-top bg-color1">
+        <div class="container">
+            <h2>Online Calculator</h2>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="container-fluid bg-color2">
+        <div class="container">
+            <form action="" name="calvalue">
+                <div class="input">
+                    <input type="text" name="screen" placeholder="0" disabled>
+                </div>
+
+    
+                <div class="flexbox">
+                    <div class="btn">
+                        <input type="reset" id="topbtn" value="AC">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="topbtn" value="%" onclick="percentage()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="topbtn" value="+/-" onclick="plusminus()">
+                    </div>
+                    <div class="btn">
+                        <i class="fa-solid fa-backspace" onclick="backspace()"></i>
+                        <input type="button" id="sidebtn" value="" onclick="backspace()">
+                    </div>
+                </div>
+
+                <div class="flexbox">
+                    <div class="btn">
+                        <input type="button" value="&sup1;/x" onclick="overx()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="x&sup2;" onclick="xraise2()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="&sup2;&#8730x" onclick="square()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="sidebtn" value="&divide;" onclick="rundivide()">
+                    </div>
+                </div>
+
+                <div class="flexbox">
+                    <div class="btn">
+                        <input type="button" value="7" onclick="run7()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="8" onclick="run8()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="9" onclick="run9()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="sidebtn" value="&times;" onclick="runmultiple()">
+                    </div>
+                </div>
+
+                <div class="flexbox">
+                    <div class="btn">
+                        <input type="button" value="4" onclick="run4()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="5" onclick="run5()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="6" onclick="run6()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="sidebtn" value="&minus;" onclick="runminus()">
+                    </div>
+                </div>
+
+                <div class="flexbox">
+                    <div class="btn">
+                        <input type="button" value="1" onclick="run1()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="2" onclick="run2()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="3" onclick="run3()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="sidebtn" value="&plus;" onclick="runplus()">
+                    </div>
+                </div>
+
+                <div class="flexbox">
+                    <div class="btn zero">
+                        <input type="button" value="0" onclick="run0()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="." onclick="rundot()">
+                    </div>
+                    <div class="btn">
+                        <input type="button" id="sidebtn" value="&equals;" onclick="runequal()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer class="container-fluid-bottom bg-color1">
+        <div class="container">
+            <h6>Copyright &copy; 2022. All Rights are Reserved. Developed by <a href="https://joshuaabefe.github.io" target="_blank">joshuaabefe.github.io</a></h6>
+        </div>
+    </footer>
+    
+</body>
+</html>
